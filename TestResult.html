@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+<style>
+    /* 위 */
+    .menu-wrap {
+        height: 120px;
+        width: 100%;
+        position: fixed;
+    }
+    .menu-wrap a {
+        color: white;
+    }
+    .mainlogo > a {
+        font-family: 'Barriecito', cursive;
+        font-size: 4em;
+        padding: 0 30px 0 10px;
+    }
+    /**/
+    .menu-wrap-row a {
+        color: black;
+    }
+    .menu-wrap-row a.categoryfontcolor {
+        color: dimgrey;
+    }
+    .menu-wrap-row {
+        height: 120px;
+        width: 100%;
+        position: fixed;
+        background-color: white;
+        border-bottom: 1px solid silver;
+    }
+    /**/
+    .mainlogo > a:hover {
+        text-decoration: none;
+    }
+    #mainmenu > div {
+        height: 100px;
+        padding: 10px;
+    }
+    #mainmenu1 > a {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    #mainmenu2 {
+        padding: 50px 0;
+        float: right;
+        margin-right: 20px;
+    }
+    #mainmenu2 > a {
+        font-size: 1em;
+        margin: 0 5px;
+    }
+    #mainmenu1 {
+        float: left;
+        padding: 50px 0;
+    }
+    .mainlogo {
+        float: left;
+        padding: 20px;
+    }
+    #backgroundTest {
+        height: 620px;
+        background-color: #ABD0CE;
+    }
+    .item > .maintopslide {
+        max-width: none !important;
+        height: 620px !important;
+    }
+    .mainsettemplate {
+        font-family: 'Comfortaa', cursive;
+        color: #7C7877;
+        height: 600px;
+        width: 1140px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .mainsettemplate > .maintemplatetitle {
+        padding: 30px;
+        text-align: center;
+        font-size: 2em;
+        border-bottom: 1px solid #D9D4CF;
+    }
+    .mainimgtemplate {
+        margin-top: 20px;
+    }
+    .mainproductslide {
+        width: 100%;
+    }
+    .mainsettemplate > .row {
+        padding-top: 60px;
+    }
+    .mainproductname {
+        padding: 10px;
+        text-align: center;
+    }
+    #mallmenu {
+        z-index: 1;
+    }
+        #mallfooter {
+            height: 190px;
+            background-color: #7C7877;
+            color: #F0E5DE;
+            padding: 20px;
+        }
+        .footerfontcolormenu {
+            padding-bottom: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            border-bottom: 1px solid #F0E5DE;
+        }
+        .footerfontcolormenu span {
+            padding: 0 20px;
+        }
+        .footerbottom {
+            padding: 20px;
+        }
+        .footerbottom div {
+            padding: 10px 0;
+        }
+        .footerbottom div span {
+            padding-right: 20px;
+            margin-right: 10px;
+            border-right: 1px solid;
+        }
+        #footerstylediv {
+            background-color: #333333;
+        }
+        #footerstylediv div {
+            padding: 14px;
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+    @media(max-width: 1140px) {
+    #mallmenu {
+        width: 1140px;
+    } 
+    }
+</style>
+</head>
+<body>
+    <div id="mallmenu" class="menu-wrap">
+            <div id="mainmenu2">
+                <a class="categoryfontcolor" href="#">로그인</a>
+                <a class="categoryfontcolor" href="#">회원가입</a>
+                <a class="categoryfontcolor" href="#">마이페이지</a>
+                <a class="categoryfontcolor" href="#">검색</a>
+            </div>
+            <div>
+            <div class="mainlogo">
+                <a href="#">Handius</a>
+            </div>
+            <div id="mainmenu1">
+                <a class="categoryfontcolor" href="#">완제품</a>
+                <a class="categoryfontcolor" href="#">주문제작</a>
+                <a class="categoryfontcolor" href="#">커뮤니티</a>
+                <a class="categoryfontcolor" href="#">작가페이지</a>
+            </div>
+            </div>
+    </div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="1.jpg" alt="1">
+    </div>
+
+    <div class="item">
+      <img src="2.jpg" alt="2">
+    </div>
+
+    <div class="item">
+      <img src="3.jpg" alt="3">
+    </div>
+
+    <div class="item">
+      <img src="4.jpg" alt="4">
+    </div>
+  </div>
+</div>
+
+<div class="mainsettemplate">
+    <div class="maintemplatetitle">Second</div>
+        <div class="row">
+         <div class="col-md-4">
+          <img class="mainproductslide" src="color1.jpg" alt="1">
+          <div class="mainproductname"><h4>product1</h4></div>
+          <div class="mainproductname">product price & content</div>
+         </div>
+         <div class="col-md-4">
+          <img class="mainproductslide" src="color2.jpg" alt="2">
+          <div class="mainproductname"><h4>product2</h4></div>
+          <div class="mainproductname">product price & content</div>
+         </div>
+         <div class="col-md-4">
+          <img class="mainproductslide" src="color3.jpg" alt="3">
+          <div class="mainproductname"><h4>product3</h4></div>
+          <div class="mainproductname">product price & content</div>
+         </div>
+        </div>
+    </div>
+
+<div class="mainimgtemplate">
+      <img src="2.jpg" alt="2">
+</div>
+<div class="mainsettemplate">
+    <div class="maintemplatetitle">fourth</div>
+        <div class="row">
+         <div class="col-md-4">
+          <img class="mainproductslide" src="color1.jpg" alt="1">
+          <div class="mainproductname"><h4>product1</h4></div>
+          <div class="mainproductname">product price & content</div>
+         </div>
+         <div class="col-md-4">
+          <img class="mainproductslide" src="color2.jpg" alt="2">
+          <div class="mainproductname"><h4>product2</h4></div>
+          <div class="mainproductname">product price & content</div>
+         </div>
+         <div class="col-md-4">
+          <img class="mainproductslide" src="color3.jpg" alt="3">
+          <div class="mainproductname"><h4>product3</h4></div>
+          <div class="mainproductname">product price & content</div>
+         </div>
+        </div>
+</div>
+<div class="mainsettemplate">
+    <div class="maintemplatetitle">Fifth</div>
+        <div class="row">
+         <div class="col-md-4">
+          <img class="mainproductslide" src="color1.jpg" alt="1">
+          <div class="mainproductname"><h4>product1</h4></div>
+          <div class="mainproductname">product price & content</div>
+         </div>
+         <div class="col-md-4">
+          <img class="mainproductslide" src="color2.jpg" alt="2">
+          <div class="mainproductname"><h4>product2</h4></div>
+          <div class="mainproductname">product price & content</div>
+         </div>
+         <div class="col-md-4">
+          <img class="mainproductslide" src="color3.jpg" alt="3">
+          <div class="mainproductname"><h4>product3</h4></div>
+          <div class="mainproductname">product price & content</div>
+         </div>
+        </div>
+</div>
+    <div id="mallfooter">
+        <div class="footerfontcolormenu">
+            <span>이용약관</span>
+            <span>개인정보처리방침</span>
+            <span>청소년보호정책</span>
+            <span>공지사항</span>
+        </div>
+        <div class="footerbottom">
+           <div>
+            <span>대표전화 : 1544 - 3333</span>
+            팩스 : 031 - 333 - 3333 
+           </div>
+           <div>
+            <span>서울 종로구 종로 69 YMCA빌딩 7층</span>
+            Team Handius
+           </div>
+        </div>
+    </div>
+    <div id="footerstylediv">
+        <div>
+            COPYRIGHT © 2019-2019 HANDIUS ALL RIGHTS RESERVED.
+        </div>
+    </div>
+    <script>
+        $(window).scroll(function () {
+            var height = $(document).scrollTop();
+            if(height > 500) {
+                $('#mallmenu').hasClass();
+                $('#mallmenu').removeClass('menu-wrap');
+                $('#mallmenu').addClass('menu-wrap-row');
+            } else {
+                $('#mallmenu').removeClass('menu-wrap-row');
+                $('#mallmenu').addClass('menu-wrap');
+            }
+        });
+    </script>
+</body>
+</html>
